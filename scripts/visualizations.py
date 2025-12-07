@@ -59,8 +59,12 @@ def _save_fig(filename: str, out_dir: str = "reports/figures") -> str:
     - Saves the current active matplotlib figure with dpi=300 and bbox_inches='tight'.
     - Prints a short confirmation message.
     """
-    os.makedirs(out_dir, exist_ok=True)
-    file_path = os.path.join(out_dir, filename)
+    # go one level up
+    parent_dir = os.path.join("..", out_dir)
+
+    os.makedirs(parent_dir, exist_ok=True)
+    file_path = os.path.join(parent_dir, filename)
+
     plt.savefig(file_path, bbox_inches='tight', dpi=300)
     print(f"[+] Figure saved: {file_path}")
     return file_path
