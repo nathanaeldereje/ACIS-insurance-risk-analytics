@@ -47,13 +47,16 @@ pip install -r requirements.txt
 dvc pull                   # pulls versioned data
 jupyter notebook           # explore notebooks/
 ```
-Current Progress (Dec 2025)
 
-Task,Status,Notes
-Task 1 — EDA,Done 100%,5 elite plots + South Africa Risk Map
-Task 2 — DVC,Done 100%,Fully auditable pipeline
-Task 3 — Hypothesis Testing,Not Started,Next
-Task 4 — Modeling,Not Started,Coming
+
+### Current Progress (as of 7 December 2025)
+
+| Task                     | Status          | Notes                                              |
+|--------------------------|-----------------|----------------------------------------------------|
+| **Task 1 — EDA & Visualisation** | ✅ Done 100%     | 5 elite plots + **South Africa Insurance Risk Heatmap** |
+| **Task 2 — DVC Pipeline**        | ✅ Done 100%     | Fully reproducible • `dvc pull` ready • Local remote configured |
+| **Task 3 — Hypothesis Testing**  | ⏳ Not Started   | Next in line                                        |
+| **Task 4 — Predictive Modeling + SHAP** | ⏳ Not Started | Coming soon — XGBoost + risk-based pricing engine   |
 
 ### Pipeline Status
 ![DVC](https://img.shields.io/badge/DVC-tracked-brightgreen?style=flat&logo=data-version-control) 
