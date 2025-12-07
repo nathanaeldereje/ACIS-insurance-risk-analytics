@@ -21,6 +21,9 @@ Help AlphaCare Insurance Solutions (ACIS) attract profitable new customers by:
 ```bash
 ACIS-insurance-risk-analytics/
 ├── data/                  # Raw + versioned datasets (tracked with DVC)
+│   ├── raw/
+│   │   └── MachineLearningRating_v3.txt.dvc    # tracked by DVC
+│   └── processed/                              # future cleaned versions
 ├── notebooks/             # Exploratory analysis & final visualizations
 ├── scripts/               # Clean, modular production pipeline
 ├── reports/               # Interim + final report (PDF/Medium-style)
@@ -46,10 +49,16 @@ jupyter notebook           # explore notebooks/
 ```
 Current Progress (Dec 2025)
 
-Task 1: EDA + Stats → In progress
-Task 2: DVC Pipeline → 
-Task 3: Hypothesis Testing → 
-Task 4: Predictive Modeling + SHAP → 
+Task,Status,Notes
+Task 1 — EDA,Done 100%,5 elite plots + South Africa Risk Map
+Task 2 — DVC,Done 100%,Fully auditable pipeline
+Task 3 — Hypothesis Testing,Not Started,Next
+Task 4 — Modeling,Not Started,Coming
+
+### Pipeline Status
+![DVC](https://img.shields.io/badge/DVC-tracked-brightgreen?style=flat&logo=data-version-control) 
+![Data Versioned](https://img.shields.io/badge/Data_Versioned-100%25-success) 
+![Reproducible](https://img.shields.io/badge/Reproducible-yes-28a745)
 
 Challenge completed – Dec _ 2025
 Built by Nathanael Dereje
