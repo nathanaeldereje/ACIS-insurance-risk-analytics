@@ -91,7 +91,7 @@ def loss_ratio_by(
     -------
     pd.DataFrame : sorted by loss ratio DESC, filtered by transaction threshold.
     """
-    grouped = df.groupby(by_column).agg(
+    grouped = df.groupby(by_column,observed=False).agg(
         TotalPremium=(premium_col, "sum"),
         TotalClaims=(claims_col, "sum"),
         Transactions=(id_col, "count")
@@ -222,7 +222,7 @@ def loss_ratio_by_make(df, min_policies=50):
         TotalClaims=('TotalClaims', 'sum'),
         Count=('PolicyID', 'count')
     ).reset_index()
-
+    make_stats['make']=make_stats['make'].str.strip()
     make_stats['LossRatio'] = (
         make_stats['TotalClaims'] / make_stats['TotalPremium'].replace({0: np.nan})
     )
@@ -235,7 +235,7 @@ def loss_ratio_by_model(df, make, min_policies=20):
     if subset.empty:
         return pd.DataFrame()
 
-    model_stats = subset.groupby('Model').agg(
+    model_stats = subset.groupby('Model',observed=False).agg(
         TotalPremium=('TotalPremium', 'sum'),
         TotalClaims=('TotalClaims', 'sum'),
         Count=('PolicyID', 'count')

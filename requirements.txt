@@ -17,3 +17,5 @@ notebook>=7.0.0
 
 # Nice-to-have for better plots & progress bars
 tqdm>=4.66.0
+
+# additional

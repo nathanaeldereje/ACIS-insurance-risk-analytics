@@ -71,7 +71,7 @@ def load_insurance_data(path) -> pd.DataFrame:
         .map({"Yes": True, "No": False})
         .astype("boolean")  # Nullable boolean type
     )
-
+    df["make"]=df['make'].str.strip()
     # Extract Period (Year-Month)
     df["TransactionYearMonth"] = df["TransactionMonth"].dt.to_period("M")
     
