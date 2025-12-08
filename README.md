@@ -48,6 +48,19 @@ dvc pull                   # pulls versioned data
 jupyter notebook           # explore notebooks/
 ```
 
+#### 🔧 Before Running Hypothesis Tests 
+Run the following script to generate the analysis_table and summary reports:
+```bash
+python scripts/task3_prepare_analysis_table.py
+dvc add data/processed/analysis_table.parquet
+git add reports/task3/summary_counts.csv scripts/task3_prepare_analysis_table.py
+git commit -m "task-3: prepared analysis table and group summaries"
+dvc push
+```
+This script:
+- validates financial data
+- generates data/processed/analysis_table.parquet (tracked by DVC)
+- creates summary reports in reports/task3/summary_counts.csv
 
 ### Current Progress (as of 7 December 2025)
 

@@ -8,6 +8,7 @@ Clean, modular, well-documented Python scripts designed to be run sequentially o
 | eda_metrics.py      | Creates all derived features (loss ratio, vehicle age, risk flags, etc.)      |
 | 03_hypothesis_tests.py         | Runs all statistical tests + saves results to CSV + prints business summary    |
 | visualizations.py         | Generates visuals and saves them as reports    |
+| task3_prepare_analysis_table.py         | validates financial data, generates data/processed/analysis_table.parquet (tracked by DVC), creates summary reports in reports/task3/summary_counts.csv    |
 | 04_train_claim_severity.py     | Trains and saves best severity model (XGBoost)                                |
 | 05_train_claim_probability.py | Trains and saves binary classification model                                  |
 | 06_risk_based_pricing.py       | Generates predicted optimal premiums using combined models                   |

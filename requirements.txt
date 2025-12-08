@@ -20,4 +20,4 @@ tqdm>=4.66.0
 
 # additional
 dvc==3.64.2
-pyarrow==15.0.0
+pyarrow==22.0.0
