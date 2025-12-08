@@ -1,6 +1,3 @@
-
-### notebooks/README.md
-```markdown
 # Notebooks – Exploratory Analysis & Visualizations
 
 Jupyter notebooks for exploration, prototyping, hypothesis testing, and final stakeholder-ready visualizations.
