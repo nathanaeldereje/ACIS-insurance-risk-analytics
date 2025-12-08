@@ -10,11 +10,11 @@ __pycache__/
 # *.ipynb
 
 # Data
-data/
-*.csv
-*.txt
-*.parquet
-*.feather
+# === DATA FILES (never commit large files) ===
+data/raw/*
+data/processed/*
+!data/raw/*.dvc           # ← ALLOW .dvc pointer files in raw
+!data/processed/*.dvc       # ← ALLOW .dvc pointer files in processed
 
 # OS
 .DS_Store
