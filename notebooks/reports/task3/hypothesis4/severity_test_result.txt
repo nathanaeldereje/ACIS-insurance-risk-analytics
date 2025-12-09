@@ -1,0 +1,2 @@
+t-test (equal var):
+Statistic = 0.5737, p = 5.6753e-01, Cohen's d = 0.1968
