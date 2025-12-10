@@ -1,0 +1,5 @@
+outs:
+- md5: 0d20a527d876418c5d75f28e73bb2186
+  size: 38597
+  hash: md5
+  path: severity_test.parquet

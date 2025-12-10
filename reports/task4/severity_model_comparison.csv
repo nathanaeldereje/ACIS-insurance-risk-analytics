@@ -1,0 +1,4 @@
+model,rmse,r2
+"RandomForest_{'n_estimators': 200, 'min_samples_leaf': 1, 'max_depth': None}",388.6813021624872,0.9998477434311663
+"XGBoost_{'n_estimators': 100, 'max_depth': 6, 'learning_rate': 0.1}",1681.1026384682427,0.9971517559419616
+LinearRegression,84042.90662257104,-6.118538998013227
