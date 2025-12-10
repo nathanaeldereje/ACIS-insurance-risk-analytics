@@ -105,7 +105,7 @@ def test_severity_by_gender(
     df: pd.DataFrame,
     gender_col: str = "Gender",
     severity_col: str = "TotalClaims",
-    reports_folder: str = "reports/task3/hypothesis4"
+    reports_folder: str = "../reports/task3/hypothesis4"
 ) -> dict:
     """
     Test whether **claim severity** differs between genders.
