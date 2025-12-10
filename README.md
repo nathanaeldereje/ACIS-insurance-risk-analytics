@@ -64,17 +64,18 @@ This script:
 
 ### Current Progress (as of 7 December 2025)
 
-| Task                     | Status          | Notes                                              |
-|--------------------------|-----------------|----------------------------------------------------|
-| **Task 1 — EDA & Visualisation** | ✅ Done 100%     | 5 elite plots + **South Africa Insurance Risk Heatmap** |
-| **Task 2 — DVC Pipeline**        | ✅ Done 100%     | Fully reproducible • `dvc pull` ready • Local remote configured |
-| **Task 3 — Hypothesis Testing**  | ⏳ Not Started   | Next in line                                        |
-| **Task 4 — Predictive Modeling + SHAP** | ⏳ Not Started | Coming soon — XGBoost + risk-based pricing engine   |
+| Task                                  | Status        | Notes                                                                                   |
+|---------------------------------------|---------------|-----------------------------------------------------------------------------------------|
+| **Task 1 — EDA & Visualisation**      | ✅ Completed  | 5 elite plots + **National Risk Heatmap (South Africa)** + advanced feature metrics     |
+| **Task 2 — DVC Pipeline**             | ✅ Completed  | Fully reproducible → `dvc pull` ready • Local remote configured • Version-tracked data  |
+| **Task 3 — Hypothesis Testing**       | ✅ Completed  | Province vs ZIP vs Gender: **P-values, Effect Sizes, Post-hoc tests, Margin analysis**  |
+| **Task 4 — Predictive Modeling + SHAP** | ✅ Completed | Random Forest (Severity) + SHAP explainability + model comparison + pricing foundation |
+
 
 ### Pipeline Status
 ![DVC](https://img.shields.io/badge/DVC-tracked-brightgreen?style=flat&logo=data-version-control) 
 ![Data Versioned](https://img.shields.io/badge/Data_Versioned-100%25-success) 
 ![Reproducible](https://img.shields.io/badge/Reproducible-yes-28a745)
 
-Challenge completed – Dec _ 2025
+Challenge completed – Dec 10/2025
 Built by Nathanael Dereje

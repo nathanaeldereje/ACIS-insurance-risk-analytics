@@ -13,10 +13,10 @@ Clean, modular, well-documented Python scripts designed to be run sequentially o
 | hypothesis/zipcode.py           | H₂ — Risk differences between ZIP codes(Mixed-Effects Logistic Regression (frequency), Kruskal-Wallis / ANOVA (severity).)                           |
 | hypothesis/zipcode_margin.py     | H₃ — Margin (profitability) differences by ZIP(OLS with clustered robust SE + Wald F-test.)                                |
 | hypothesis/gender.py | H₄ — Risk differences between men and women(Two-proportion z-test (frequency), Welch t-test / Mann-Whitney U (severity).)                                  |
-| 04_train_claim_severity.py     | Trains and saves best severity model (XGBoost)                                |
-| 05_train_claim_probability.py | Trains and saves binary classification model                                  |
-| 06_risk_based_pricing.py       | Generates predicted optimal premiums using combined models                   |
-| 07_shap_analysis.py            | Generates SHAP summary plots and saves top features                           |
+| _04_train_claim_severity.py     | Trains and saves best severity model (XGBoost)                                |
+| prepare_severity_data.py | Curates severity modeling dataset + engineered variables + removes leverage outliers.                                  |
+| severity_pipeline.py       | Full reproducible severity pipeline (split, train, evaluate, persist models + metrics).                   |
+| P07_shap_analysis.py            | Generates SHAP summary plots and saves top features                           |
 
 <!-- **Run order** (after `dvc pull`):
 ```bash
